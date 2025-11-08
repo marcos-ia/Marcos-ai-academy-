@@ -1,2 +1,140 @@
 # Marcos-ai-academy-
 Academia de inteligencia artificial 
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Marcos AI Academy - Cursos de Inteligencia Artificial</title>
+  <meta name="description" content="Academia moderna con cursos de IA para principiantes, creativos, gamers y avanzados.">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Georgia', serif;
+      background-color: #f4f1ea;
+      color: #4a3b2c;
+    }
+
+    header {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 20px;
+      color: #6b5b4a;
+    }
+
+    .courses {
+      max-width: 900px;
+      margin: 40px auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      padding: 0 20px;
+    }
+
+    .course {
+      background-color: #fffdf8;
+      border: 1px solid #e0d6c3;
+      border-radius: 12px;
+      padding: 30px;
+      transition: transform 0.3s;
+    }
+
+    .course:hover {
+      transform: translateY(-4px);
+    }
+
+    .course h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .course p {
+      font-size: 16px;
+      color: #5e4c3b;
+      margin-bottom: 15px;
+    }
+
+    .price {
+      font-size: 18px;
+      font-weight: bold;
+      color: #7a5d3b;
+      display: none;
+      margin-top: 10px;
+    }
+
+    .show-button {
+      background-color: #e0d6c3;
+      color: #4a3b2c;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .show-button:hover {
+      background-color: #d4c4ae;
+    }
+
+    @media (max-width: 700px) {
+      .courses {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Marcos AI Academy</h1>
+    <p>Explora nuestros cursos exclusivos sobre Inteligencia Artificial</p>
+  </header>
+
+  <div class="courses">
+    <div class="course">
+      <h2>IA para Principiantes</h2>
+      <p>Descubre qué es la inteligencia artificial, cómo funciona y cómo se aplica en tu día a día.</p>
+      <button class="show-button" onclick="togglePrice(this)">Ver precio</button>
+      <div class="price">19€</div>
+    </div>
+
+    <div class="course">
+      <h2>IA Creativa</h2>
+      <p>Aprende a generar arte, música y textos con herramientas de inteligencia artificial.</p>
+      <button class="show-button" onclick="togglePrice(this)">Ver precio</button>
+      <div class="price">29€</div>
+    </div>
+
+    <div class="course">
+      <h2>IA en Videojuegos</h2>
+      <p>Explora cómo se usa la IA para crear enemigos, niveles y comportamientos inteligentes.</p>
+      <button class="show-button" onclick="togglePrice(this)">Ver precio</button>
+      <div class="price">24€</div>
+    </div>
+
+    <div class="course">
+      <h2>IA Avanzada</h2>
+      <p>Adéntrate en redes neuronales, aprendizaje profundo y modelos generativos.</p>
+      <button class="show-button" onclick="togglePrice(this)">Ver precio</button>
+      <div class="price">39€</div>
+    </div>
+  </div>
+
+  <script>
+    function togglePrice(button) {
+      const price = button.nextElementSibling;
+      price.style.display = price.style.display === "block" ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>
