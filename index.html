@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Marcos AI Academy - Inicio</title>
-  <meta name="description" content="Academia moderna con cursos de IA para todos los niveles.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Academia moderna con cursos de IA para todos los niveles.">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
@@ -15,9 +15,13 @@
     }
 
     nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
       background-color: #e0d6c3;
       padding: 10px;
       text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
 
     nav ul {
@@ -59,6 +63,19 @@
       padding: 0 20px;
     }
 
+    h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    details {
+      margin-bottom: 10px;
+    }
+
     form {
       display: flex;
       flex-direction: column;
@@ -80,15 +97,35 @@
       border-radius: 6px;
       cursor: pointer;
     }
+
+    footer {
+      background-color: #e0d6c3;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #4a3b2c;
+    }
+
+    footer a {
+      color: #4a3b2c;
+      text-decoration: none;
+      margin: 0 5px;
+    }
   </style>
 </head>
 <body>
 
   <nav>
     <ul>
+      <li><a href="index.html">Inicio</a></li>
       <li><a href="cursos.html">Cursos</a></li>
-      <li><a href="#aplicaciones">Aplicaciones</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="juego.html">Mini juego</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#destacados">Destacados</a></li>
       <li><a href="#contacto">Contacto</a></li>
+      <li><a href="index-va.html">Valencià</a></li>
     </ul>
   </nav>
 
@@ -97,14 +134,43 @@
     <p>Academia moderna con cursos de Inteligencia Artificial para todos los niveles</p>
   </header>
 
-  <section id="aplicaciones">
-    <h2>¿Dónde se usa la IA hoy?</h2>
+  <section id="proyectos">
+    <h2>Proyectos de alumnos</h2>
+    <p>Explora lo que nuestros estudiantes han creado con IA:</p>
     <ul>
-      <li>🚗 Coches autónomos</li>
-      <li>🧬 Medicina y diagnóstico</li>
-      <li>🎮 Videojuegos inteligentes</li>
-      <li>📱 Redes sociales y filtros</li>
+      <li>Generador de cuentos con IA</li>
+      <li>Juego de preguntas con ChatGPT</li>
+      <li>Carteles artísticos con DALL·E</li>
     </ul>
+  </section>
+
+  <section id="faq">
+    <h2>Preguntas frecuentes</h2>
+    <details>
+      <summary>¿Necesito saber programar?</summary>
+      <p>No, nuestros cursos están pensados para todos los niveles.</p>
+    </details>
+    <details>
+      <summary>¿Qué herramientas usamos?</summary>
+      <p>ChatGPT, DALL·E, Runway, Suno, entre otras.</p>
+    </details>
+    <details>
+      <summary>¿Puedo hacer los cursos desde el móvil?</summary>
+      <p>Sí, todo está adaptado para móviles y tablets.</p>
+    </details>
+  </section>
+
+  <section id="destacados">
+    <h2>Pruebas destacadas</h2>
+    <p>Estos son dos de los mejores trabajos del mes:</p>
+    <div class="alumno">
+      <h3>Lucía - “IA que escribe poemas”</h3>
+      <p>Lucía entrenó un modelo para generar poemas sobre el mar. ¡Impresionante!</p>
+    </div>
+    <div class="alumno">
+      <h3>Álex - “Juego de adivinanzas con IA”</h3>
+      <p>Álex creó un juego donde la IA intenta adivinar el animal que piensas.</p>
+    </div>
   </section>
 
   <section id="contacto">
@@ -117,6 +183,15 @@
       <button type="submit">Enviar</button>
     </form>
   </section>
+
+  <footer>
+    <p>© 2025 Marcos AI Academy · <a href="mailto:contacto@marcosai.com">Contacto</a></p>
+    <p>
+      <a href="#">Instagram</a> ·
+      <a href="#">YouTube</a> ·
+      <a href="#">GitHub</a>
+    </p>
+  </footer>
 
 </body>
 </html>
