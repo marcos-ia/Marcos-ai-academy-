@@ -2,8 +2,8 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Marcos AI Academy - Inicio</title>
-  <meta name="description" content="Academia moderna con cursos de IA para todos los niveles.">
+  <title>Cursos - Marcos AI Academy</title>
+  <meta name="description" content="Explora todos los cursos de IA disponibles en Marcos AI Academy.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
@@ -12,111 +12,136 @@
       font-family: 'Poppins', sans-serif;
       background-color: #f4f1ea;
       color: #3a2f23;
+      padding: 40px 20px;
     }
 
-    nav {
-      background-color: #e0d6c3;
-      padding: 10px;
+    h1 {
       text-align: center;
+      font-size: 36px;
+      margin-bottom: 40px;
     }
 
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
+    .courses {
+      max-width: 900px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
     }
 
-    nav li {
-      display: inline;
-      margin: 0 15px;
+    .course {
+      background-color: #fffdf8;
+      border: 1px solid #e0d6c3;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
     }
 
-    nav a {
-      text-decoration: none;
-      color: #4a3b2c;
-      font-weight: bold;
-    }
-
-    header {
-      padding: 60px 20px;
-      text-align: center;
-      background: linear-gradient(to right, #d4c4ae, #f4f1ea);
-    }
-
-    header h1 {
-      font-size: 48px;
+    .course h2 {
+      font-size: 24px;
       margin-bottom: 10px;
     }
 
-    header p {
-      font-size: 20px;
-      color: #6b5b4a;
+    .course ul {
+      padding-left: 20px;
+      margin-bottom: 10px;
     }
 
-    section {
-      max-width: 800px;
-      margin: 60px auto;
-      padding: 0 20px;
+    .price {
+      font-weight: bold;
+      color: #7a5d3b;
+      display: none;
+      margin-top: 10px;
     }
 
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      margin-top: 20px;
-    }
-
-    input, textarea {
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-    }
-
-    button[type="submit"] {
-      background-color: #0077cc;
-      color: white;
+    .show-button {
+      background-color: #e0d6c3;
+      color: #4a3b2c;
+      padding: 10px 20px;
       border: none;
-      padding: 10px;
       border-radius: 6px;
       cursor: pointer;
+      font-weight: bold;
+    }
+
+    a.volver {
+      display: block;
+      text-align: center;
+      margin-top: 50px;
+      color: #0077cc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @media (max-width: 700px) {
+      .courses {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
 <body>
 
-  <nav>
-    <ul>
-      <li><a href="cursos.html">Cursos</a></li>
-      <li><a href="#aplicaciones">Aplicaciones</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-  </nav>
+  <h1>Cursos de Inteligencia Artificial</h1>
 
-  <header>
-    <h1>Marcos AI Academy</h1>
-    <p>Academia moderna con cursos de Inteligencia Artificial para todos los niveles</p>
-  </header>
+  <div class="courses">
+    <div class="course">
+      <h2>IA para Principiantes</h2>
+      <ul>
+        <li>¿Qué es la IA?</li>
+        <li>Tipos de IA</li>
+        <li>Aplicaciones reales</li>
+        <li>Mini proyecto final</li>
+      </ul>
+      <button class="show-button" onclick="togglePrice(this)">Ver precio</button>
+      <div class="price">19€</div>
+    </div>
 
-  <section id="aplicaciones">
-    <h2>¿Dónde se usa la IA hoy?</h2>
-    <ul>
-      <li>🚗 Coches autónomos</li>
-      <li>🧬 Medicina y diagnóstico</li>
-      <li>🎮 Videojuegos inteligentes</li>
-      <li>📱 Redes sociales y filtros</li>
-    </ul>
-  </section>
+    <div class="course">
+      <h2>IA Creativa</h2>
+      <ul>
+        <li>Textos con ChatGPT</li>
+        <li>Imágenes con DALL·E</li>
+        <li>Audio con Suno</li>
+        <li>Proyecto artístico final</li>
+      </ul>
+      <button class="show-button" onclick="togglePrice(this)">Ver precio</button>
+      <div class="price">29€</div>
+    </div>
 
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <p>¿Tienes dudas o quieres apuntarte? Escríbenos:</p>
-    <form>
-      <input type="text" placeholder="Tu nombre" required>
-      <input type="email" placeholder="Tu correo" required>
-      <textarea placeholder="Tu mensaje"></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
+    <div class="course">
+      <h2>IA en Videojuegos</h2>
+      <ul>
+        <li>IA en motores de juego</li>
+        <li>Comportamientos inteligentes</li>
+        <li>Diseño de niveles</li>
+        <li>Demo jugable</li>
+      </ul>
+      <button class="show-button" onclick="togglePrice(this)">Ver precio</button>
+      <div class="price">24€</div>
+    </div>
+
+    <div class="course">
+      <h2>IA Avanzada</h2>
+      <ul>
+        <li>Redes neuronales</li>
+        <li>Aprendizaje profundo</li>
+        <li>Modelos generativos</li>
+        <li>Proyecto final con IA real</li>
+      </ul>
+      <button class="show-button" onclick="togglePrice(this)">Ver precio</button>
+      <div class="price">39€</div>
+    </div>
+  </div>
+
+  <a class="volver" href="index.html">← Volver al inicio</a>
+
+  <script>
+    function togglePrice(button) {
+      const price = button.nextElementSibling;
+      price.style.display = price.style.display === "block" ? "none" : "block";
+    }
+  </script>
 
 </body>
 </html>
