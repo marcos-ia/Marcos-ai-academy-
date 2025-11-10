@@ -31,14 +31,38 @@
     }
 
     nav li {
-      display: inline;
+      display: inline-block;
       margin: 0 15px;
+      position: relative;
     }
 
     nav a {
       text-decoration: none;
       color: #4a3b2c;
       font-weight: bold;
+    }
+
+    nav li .submenu {
+      display: none;
+      position: absolute;
+      background-color: #f4f1ea;
+      padding: 10px;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      list-style: none;
+      margin: 0;
+      top: 30px;
+      left: 0;
+      min-width: 120px;
+    }
+
+    nav li:hover .submenu {
+      display: block;
+    }
+
+    nav li .submenu li {
+      display: block;
+      margin: 5px 0;
     }
 
     header {
@@ -72,19 +96,30 @@
       padding-left: 20px;
     }
 
-    .idioma {
-      text-align: center;
-      margin-top: 40px;
+    details {
+      margin-bottom: 10px;
     }
 
-    .idioma a {
-      display: inline-block;
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    button[type="submit"] {
       background-color: #0077cc;
       color: white;
-      padding: 10px 20px;
+      border: none;
+      padding: 10px;
       border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
+      cursor: pointer;
     }
 
     footer {
@@ -112,6 +147,14 @@
       <li><a href="#proyectos">Proyectos</a></li>
       <li><a href="#faq">FAQ</a></li>
       <li><a href="#contacto">Contacto</a></li>
+      <li>
+        Idioma
+        <ul class="submenu">
+          <li><a href="index.html">Español</a></li>
+          <li><a href="index-va.html">Valencià</a></li>
+          <li><a href="index-en.html">English</a></li>
+        </ul>
+      </li>
     </ul>
   </nav>
 
@@ -139,6 +182,10 @@
       <summary>¿Qué herramientas usamos?</summary>
       <p>ChatGPT, DALL·E, Runway, Suno, entre otras.</p>
     </details>
+    <details>
+      <summary>¿Puedo hacer los cursos desde el móvil?</summary>
+      <p>Sí, todo está adaptado para móviles y tablets.</p>
+    </details>
   </section>
 
   <section id="contacto">
@@ -150,10 +197,6 @@
       <button type="submit">Enviar</button>
     </form>
   </section>
-
-  <div class="idioma">
-    <a href="index-en.html">Cambiar a inglés</a>
-  </div>
 
   <footer>
     <p>© 2025 Marcos AI Academy · <a href="mailto:contacto@marcosai.com">Contacto</a></p>
