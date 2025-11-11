@@ -1,211 +1,145 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Marcos AI Academy - Inicio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Academia moderna con cursos de IA para todos los niveles.">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Academia Multilingüe</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: #f4f1ea;
-      color: #3a2f23;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
     }
 
-    nav {
-      position: sticky;
+    #hamburger {
+      font-size: 30px;
+      cursor: pointer;
+      padding: 10px;
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 1001;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    }
+
+    #sideMenu {
+      position: fixed;
       top: 0;
+      left: -260px;
+      width: 260px;
+      height: 100%;
+      background-color: #222;
+      color: white;
+      transition: left 0.3s ease;
       z-index: 1000;
-      background-color: #e0d6c3;
-      padding: 10px;
-      text-align: center;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding-top: 60px;
     }
 
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav li {
-      display: inline-block;
-      margin: 0 15px;
-      position: relative;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #4a3b2c;
-      font-weight: bold;
-    }
-
-    nav li .submenu {
-      display: none;
-      position: absolute;
-      background-color: #f4f1ea;
-      padding: 10px;
-      border-radius: 6px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      list-style: none;
-      margin: 0;
-      top: 30px;
+    #sideMenu.open {
       left: 0;
-      min-width: 120px;
     }
 
-    nav li:hover .submenu {
+    #sideMenu ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    #sideMenu li {
+      padding: 15px 20px;
+      border-bottom: 1px solid #444;
+    }
+
+    #sideMenu a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
       display: block;
     }
 
-    nav li .submenu li {
-      display: block;
-      margin: 5px 0;
+    #sideMenu a:hover {
+      background-color: #444;
     }
 
-    header {
-      padding: 60px 20px;
-      text-align: center;
-      background: linear-gradient(to right, #d4c4ae, #f4f1ea);
+    #sideMenu ul ul {
+      padding-left: 15px;
+      background-color: #333;
     }
 
-    header h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 20px;
-      color: #6b5b4a;
+    main {
+      padding: 80px 20px;
+      max-width: 800px;
+      margin: auto;
     }
 
     section {
-      max-width: 800px;
-      margin: 60px auto;
-      padding: 0 20px;
+      margin-bottom: 40px;
     }
 
     h2 {
-      font-size: 28px;
-      margin-bottom: 10px;
+      color: #333;
     }
 
-    ul {
-      padding-left: 20px;
-    }
-
-    details {
-      margin-bottom: 10px;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      margin-top: 20px;
-    }
-
-    input, textarea {
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-    }
-
-    button[type="submit"] {
-      background-color: #0077cc;
-      color: white;
-      border: none;
-      padding: 10px;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-
-    footer {
-      background-color: #e0d6c3;
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-      color: #4a3b2c;
-    }
-
-    footer a {
-      color: #4a3b2c;
-      text-decoration: none;
-      margin: 0 5px;
+    p {
+      color: #555;
     }
   </style>
 </head>
 <body>
 
-  <nav>
+  <div id="hamburger" onclick="toggleMenu()">☰</div>
+
+  <nav id="sideMenu">
     <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="cursos.html">Cursos</a></li>
-      <li><a href="juego.html">Mini juego</a></li>
-      <li><a href="#proyectos">Proyectos</a></li>
-      <li><a href="#faq">FAQ</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-      <li>
-        Idioma
-        <ul class="submenu">
-          <li><a href="index.html">Español</a></li>
-          <li><a href="index-va.html">Valencià</a></li>
-          <li><a href="index-en.html">English</a></li>
+      <li><a href="como-empezamos.html">🚀 Cómo empezamos</a></li>
+      <li><a href="#cursos">📚 Cursos</a>
+        <ul>
+          <li><a href="cursos-primaria.html">Primaria</a></li>
+          <li><a href="cursos-secundaria.html">Secundaria</a></li>
+          <li><a href="cursos-idiomas.html">Idiomas</a></li>
         </ul>
       </li>
+      <li><a href="#proyectos">🧠 Proyectos</a>
+        <ul>
+          <li><a href="proyectos-creativos.html">Creativos</a></li>
+          <li><a href="proyectos-tecnologia.html">Tecnología</a></li>
+          <li><a href="galeria.html">Galería de estudiantes</a></li>
+        </ul>
+      </li>
+      <li><a href="#contacto">📞 Contacto</a></li>
+      <li><a href="#minijuego">🎮 Minijuego</a></li>
     </ul>
   </nav>
 
-  <header>
-    <h1>Marcos AI Academy</h1>
-    <p>Academia moderna con cursos de Inteligencia Artificial para todos los niveles</p>
-  </header>
+  <main>
+    <section id="cursos">
+      <h2>Cursos</h2>
+      <p>Ofrecemos formación en primaria, secundaria e idiomas.</p>
+    </section>
 
-  <section id="proyectos">
-    <h2>Proyectos de alumnos</h2>
-    <ul>
-      <li>Generador de cuentos con IA</li>
-      <li>Juego de preguntas con ChatGPT</li>
-      <li>Carteles artísticos con DALL·E</li>
-    </ul>
-  </section>
+    <section id="proyectos">
+      <h2>Proyectos</h2>
+      <p>Descubre los proyectos creativos y tecnológicos realizados por nuestros estudiantes.</p>
+    </section>
 
-  <section id="faq">
-    <h2>Preguntas frecuentes</h2>
-    <details>
-      <summary>¿Necesito saber programar?</summary>
-      <p>No, nuestros cursos están pensados para todos los niveles.</p>
-    </details>
-    <details>
-      <summary>¿Qué herramientas usamos?</summary>
-      <p>ChatGPT, DALL·E, Runway, Suno, entre otras.</p>
-    </details>
-    <details>
-      <summary>¿Puedo hacer los cursos desde el móvil?</summary>
-      <p>Sí, todo está adaptado para móviles y tablets.</p>
-    </details>
-  </section>
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>¿Tienes dudas? Escríbenos a contacto@academia.com</p>
+    </section>
 
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <form>
-      <input type="text" placeholder="Tu nombre" required>
-      <input type="email" placeholder="Tu correo" required>
-      <textarea placeholder="Tu mensaje"></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
+    <section id="minijuego">
+      <h2>Minijuego</h2>
+      <p>¡Prueba nuestro juego educativo y pon a prueba tus conocimientos!</p>
+    </section>
+  </main>
 
-  <footer>
-    <p>© 2025 Marcos AI Academy · <a href="mailto:contacto@marcosai.com">Contacto</a></p>
-    <p>
-      <a href="#">Instagram</a> ·
-      <a href="#">YouTube</a> ·
-      <a href="#">GitHub</a>
-    </p>
-  </footer>
+  <script>
+    function toggleMenu() {
+      document.getElementById("sideMenu").classList.toggle("open");
+    }
+  </script>
 
 </body>
 </html>
