@@ -147,3 +147,46 @@ header nav a:hover {
   border-radius: 5px;
   font-weight: 500;
 }
+/* ====== Formulario de contacto ====== */
+.formulario {
+  max-width: 500px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formulario label {
+  font-weight: bold;
+  color: #203a43;
+}
+
+.formulario input,
+.formulario textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+  border-color: #00bcd4;
+  outline: none;
+}
+
+.formulario button {
+  background: #00bcd4;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.formulario button:hover {
+  background: #0097a7;
+}
