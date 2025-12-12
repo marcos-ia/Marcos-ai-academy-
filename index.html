@@ -1,153 +1,118 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Marcos AI Academy</title>
+  <meta charset="UTF-8">
+  <title>Mi Web Profesional</title>
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f4f4;
+      padding: 0;
+      box-sizing: border-box;
     }
-
-    #hamburger {
-      font-size: 30px;
-      cursor: pointer;
-      padding: 10px;
-      position: fixed;
-      top: 10px;
-      left: 10px;
-      z-index: 1001;
-      background-color: #fff;
-      border-radius: 5px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      line-height: 1.6;
+      scroll-behavior: smooth; /* desplazamiento suave */
     }
-
-    #sideMenu {
+    header {
       position: fixed;
       top: 0;
-      left: -260px;
-      width: 260px;
-      height: 100%;
-      background-color: #222;
-      color: white;
-      transition: left 0.3s ease;
+      width: 100%;
+      background: #111;
+      color: #fff;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       z-index: 1000;
-      padding-top: 60px;
     }
-
-    #sideMenu.open {
-      left: 0;
-    }
-
-    #sideMenu ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    #sideMenu li {
-      padding: 15px 20px;
-      border-bottom: 1px solid #444;
-    }
-
-    #sideMenu a {
-      color: white;
+    header nav a {
+      color: #fff;
       text-decoration: none;
-      font-size: 18px;
-      display: block;
+      margin: 0 15px;
+      font-weight: 500;
     }
-
-    #sideMenu a:hover {
-      background-color: #444;
+    header nav a:hover {
+      color: #00bcd4;
     }
-
-    #sideMenu ul ul {
-      padding-left: 15px;
-      background-color: #333;
+    .hero {
+      height: 100vh;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
     }
-
-    main {
-      padding: 80px 20px;
-      max-width: 800px;
-      margin: auto;
-    }
-
-    section {
-      margin-bottom: 40px;
-    }
-
-    h1 {
-      font-size: 36px;
-      color: #222;
+    .hero h1 {
+      font-size: 3rem;
       margin-bottom: 20px;
     }
-
-    h2 {
-      color: #333;
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      max-width: 600px;
     }
-
-    p {
-      color: #555;
+    .hero a {
+      background: #00bcd4;
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .hero a:hover {
+      background: #0097a7;
+    }
+    section {
+      padding: 80px 20px;
+      min-height: 100vh;
+    }
+    .about {
+      background: #f4f4f4;
+      text-align: center;
+    }
+    .about h2 {
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+    .about p {
+      max-width: 700px;
+      margin: auto;
+      color: #333;
     }
   </style>
 </head>
 <body>
+  <header>
+    <div class="logo">MiWeb</div>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#sobre">Sobre mí</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
 
-  <div id="hamburger" onclick="toggleMenu()">☰</div>
+  <section id="inicio" class="hero">
+    <h1>Bienvenido a mi web profesional</h1>
+    <p>Construyendo proyectos digitales con estilo moderno y funcional, inspirados en sitios de éxito.</p>
+    <a href="#sobre">Descubre más</a>
+  </section>
 
-  <nav id="sideMenu">
-    <ul>
-      <li><a href="como-empezamos.html">🚀 Cómo empezamos</a></li>
-      <li><a href="#cursos">📚 Cursos</a>
-        <ul>
-          <li><a href="cursos-primaria.html">Primaria</a></li>
-          <li><a href="secundaria.html">Secundaria</a></li>
-          <li><a href="universidad.html">Universidad</a></li>
-          <li><a href="cursos-idiomas.html">Idiomas</a></li>
-        </ul>
-      </li>
-      <li><a href="#proyectos">🧠 Proyectos</a>
-        <ul>
-          <li><a href="proyectos-creativos.html">Creativos</a></li>
-          <li><a href="proyectos-tecnologia.html">Tecnología</a></li>
-          <li><a href="galeria.html">Galería de estudiantes</a></li>
-        </ul>
-      </li>
-      <li><a href="#minijuego">🎮 Minijuego</a></li>
-    </ul>
-  </nav>
+  <section id="sobre" class="about">
+    <h2>Sobre mí</h2>
+    <p>
+      Soy Marcos, estudiante apasionado por la tecnología, los idiomas y la creatividad digital.  
+      Aquí encontrarás mis proyectos, ideas y aprendizajes compartidos de forma clara y profesional.
+    </p>
+  </section>
 
-  <main>
-    <h1>Marcos AI Academy</h1>
-
-    <section id="cursos">
-      <h2>Cursos</h2>
-      <p>Ofrecemos formación en primaria, secundaria, universidad e idiomas.</p>
-    </section>
-
-    <section id="proyectos">
-      <h2>Proyectos</h2>
-      <p>Descubre los proyectos creativos y tecnológicos realizados por nuestros estudiantes.</p>
-    </section>
-
-    <section id="minijuego">
-      <h2>Minijuego</h2>
-      <p>¡Prueba nuestro juego educativo y pon a prueba tus conocimientos!</p>
-    </section>
-
-    <section id="contacto">
-      <h2>Contacto</h2>
-      <p>¿Tienes dudas? Escríbenos a contacto@marcosaiacademy.com</p>
-    </section>
-  </main>
-
-  <script>
-    function toggleMenu() {
-      document.getElementById("sideMenu").classList.toggle("open");
-    }
-  </script>
-
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p style="text-align:center;">Puedes escribirme para colaborar o compartir ideas.</p>
+  </section>
 </body>
 </html>
