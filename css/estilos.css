@@ -1,95 +1,4 @@
-/* ====== Estilos generales ====== */
-body {
-  font-family: 'Segoe UI', Arial, sans-serif;
-  margin: 0;
-  background: #f4f4f4;
-  scroll-behavior: smooth;
-}
-
-/* ====== Encabezado ====== */
-header {
-  background: #111;
-  color: #fff;
-  padding: 15px 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header .logo {
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
-header nav a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 15px;
-  font-weight: 500;
-}
-
-header nav a:hover {
-  color: #00bcd4;
-}
-
-/* ====== Hero Section (Inicio) ====== */
-.hero {
-  height: 100vh;
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 0 20px;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
-  max-width: 600px;
-}
-
-.hero .btn {
-  background: #00bcd4;
-  color: #fff;
-  padding: 12px 25px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s;
-}
-
-.hero .btn:hover {
-  background: #0097a7;
-}
-
-/* ====== Sección Sobre mí ====== */
-.about {
-  background: #fff;
-  text-align: center;
-  padding: 80px 20px;
-}
-
-.about h2 {
-  margin-bottom: 20px;
-  font-size: 2rem;
-}
-
-.about p {
-  max-width: 700px;
-  margin: auto;
-  color: #333;
-  font-size: 1.1rem;
-}
-
-/* ====== Sección Contacto ====== */
+/* ====== Sección de Contacto ====== */
 .contacto {
   background: #f4f4f4;
   text-align: center;
@@ -97,68 +6,34 @@ header nav a:hover {
 }
 
 .contacto h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 20px;
+  color: #203a43;
 }
 
 .contacto p {
   font-size: 1.1rem;
-  color: #333;
-}
-/* ====== Perfil en la página "Sobre mí" ====== */
-.perfil {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  margin-top: 40px;
-  flex-wrap: wrap;
+  color: #555;
+  margin-bottom: 40px;
 }
 
-.avatar {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid #00bcd4;
-}
-
-.info {
-  max-width: 500px;
-  text-align: left;
-}
-
-.info h3 {
-  margin-bottom: 10px;
-  font-size: 1.8rem;
-  color: #203a43;
-}
-
-.skills {
-  list-style: none;
-  padding: 0;
-  margin-top: 20px;
-}
-
-.skills li {
-  background: #e0f7fa;
-  margin: 8px 0;
-  padding: 10px;
-  border-radius: 5px;
-  font-weight: 500;
-}
-/* ====== Formulario de contacto ====== */
+/* ====== Formulario ====== */
 .formulario {
   max-width: 500px;
-  margin: 40px auto;
+  margin: 0 auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
 }
 
 .formulario label {
   font-weight: bold;
   color: #203a43;
+  text-align: left;
 }
 
 .formulario input,
@@ -168,6 +43,7 @@ header nav a:hover {
   border-radius: 5px;
   font-family: inherit;
   font-size: 1rem;
+  transition: border-color 0.3s;
 }
 
 .formulario input:focus,
