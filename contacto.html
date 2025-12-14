@@ -17,8 +17,35 @@
 
   <section class="contacto">
     <h2>Contacto</h2>
-    <p>Si quieres colaborar o compartir ideas, puedes escribirme directamente por correo.</p>
+    <p>¿Quieres colaborar o compartir ideas? Aquí tienes varias formas de ponerte en contacto conmigo.</p>
+
+    <div class="contact-info">
+      <div class="card">
+        <h3>📧 Correo</h3>
+        <p>marcos@example.com</p>
+      </div>
+      <div class="card">
+        <h3>📱 Teléfono</h3>
+        <p>+34 600 123 456</p>
+      </div>
+      <div class="card">
+        <h3>🌐 Redes</h3>
+        <p>@marcos_web en Twitter</p>
+      </div>
+    </div>
+
+    <form class="formulario">
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" name="email" placeholder="Tu correo" required>
+
+      <label for="mensaje">Mensaje</label>
+      <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
   </section>
 </body>
 </html>
-
