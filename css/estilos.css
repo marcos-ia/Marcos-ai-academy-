@@ -78,58 +78,61 @@ header nav a:hover {
 }
 
 .about h2 {
-  margin-bottom: 20px;
-  font-size: 2rem;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: #203a43;
 }
 
-.about p {
-  max-width: 700px;
-  margin: auto;
-  color: #333;
-  font-size: 1.1rem;
-}
-
-/* ====== Perfil opcional ====== */
 .perfil {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 40px;
-  margin-top: 40px;
   flex-wrap: wrap;
 }
 
 .avatar {
-  width: 200px;
-  height: 200px;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid #00bcd4;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
 
 .info {
   max-width: 500px;
   text-align: left;
+  background: #f9f9f9;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
 }
 
 .info h3 {
-  margin-bottom: 10px;
-  font-size: 1.8rem;
-  color: #203a43;
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+  color: #00bcd4;
+}
+
+.info p {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 1.1rem;
 }
 
 .skills {
   list-style: none;
   padding: 0;
-  margin-top: 20px;
 }
 
 .skills li {
   background: #e0f7fa;
   margin: 8px 0;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 8px;
   font-weight: 500;
+  color: #203a43;
 }
 
 /* ====== Sección Cursos ====== */
@@ -153,11 +156,11 @@ header nav a:hover {
 }
 
 .curso-card {
-  background: #ffffff;              /* Fondo blanco para destacar */
-  border: 2px solid #00bcd4;        /* Borde turquesa */
+  background: #ffffff;
+  border: 2px solid #00bcd4;
   padding: 25px;
   border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.15); /* Sombra clara */
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
   width: 300px;
   text-align: left;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -172,7 +175,7 @@ header nav a:hover {
   color: #00bcd4;
   margin-bottom: 15px;
   font-size: 1.4rem;
-  border-bottom: 1px solid #ddd;    /* Línea separadora */
+  border-bottom: 1px solid #ddd;
   padding-bottom: 10px;
 }
 
@@ -195,6 +198,7 @@ header nav a:hover {
 .curso-card .ofrece {
   color: #444;
 }
+
 /* ====== Sección Contacto ====== */
 .contacto {
   background: #f4f4f4;
