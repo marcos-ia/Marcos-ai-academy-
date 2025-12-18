@@ -301,3 +301,13 @@ header nav a:hover {
   color: #fff;
   box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
+header .logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+header .logo:hover {
+  color: #00bcd4;
+}
