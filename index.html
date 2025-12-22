@@ -1,34 +1,53 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Web con Asistente IA</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
+  <header>
+    <a href="index.html" class="logo">MiWeb</a>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="about.html">Sobre mí</a>
+      <a href="cursos.html">Cursos</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
 
-    <h1>Mi Web con Asistente IA</h1>
-    <p>Bienvenido a mi página con un asistente inteligente integrado.</p>
+  <section class="hero">
+    <h1>Bienvenido a MiWeb</h1>
+    <p>Descubre cómo la inteligencia artificial puede ayudarte a emprender y aprender de forma creativa.</p>
+    <a href="cursos.html" class="btn">Ver Cursos</a>
+  </section>
 
-    <!-- ✅ ASISTENTE IA -->
-    <div class="assistant-widget">
-        <div class="assistant-header">
-            <span>Asistente IA</span>
-        </div>
-
-        <div class="assistant-messages" id="assistant-messages">
-            <div class="message bot">
-                Hola, soy tu asistente. ¿En qué te ayudo?
-            </div>
-        </div>
-
-        <div class="assistant-input-area">
-            <input type="text" id="assistant-input" placeholder="Escribe tu mensaje...">
-            <button id="assistant-send">Enviar</button>
-        </div>
+  <!-- Historias de éxito -->
+  <section class="testimonios">
+    <h2>Historias de éxito</h2>
+    <div class="bloques">
+      <div class="curso-card">
+        <p>"Los cursos de Marcos me ayudaron a lanzar mi proyecto con IA."</p>
+        <p><strong>- Ana López</strong></p>
+      </div>
+      <div class="curso-card">
+        <p>"Explicaciones claras y prácticas, muy recomendados."</p>
+        <p><strong>- Juan Pérez</strong></p>
+      </div>
+      <div class="curso-card">
+        <p>"Gracias a este programa aprendí a aplicar IA en mi negocio."</p>
+        <p><strong>- Laura García</strong></p>
+      </div>
     </div>
+  </section>
 
-    <script src="script.js"></script>
+  <footer>
+    <p>© 2025 MiWeb - Todos los derechos reservados</p>
+    <div class="social">
+      <a href="#">🌐</a>
+      <a href="#">📧</a>
+      <a href="#">📱</a>
+    </div>
+  </footer>
 </body>
 </html>
