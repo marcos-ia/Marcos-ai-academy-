@@ -2,22 +2,21 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Inicio</title>
+  <title id="title-index">Inicio</title>
   <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
 
 <header>
-  <a href="index.html" class="logo">MiWeb</a>
+  <a href="index.html" class="logo" id="nav-logo">MiWeb</a>
 
   <nav>
-    <a href="index.html">Inicio</a>
-    <a href="about.html">Sobre mí</a>
-    <a href="cursos.html">Cursos</a>
-    <a href="contacto.html">Contacto</a>
+    <a href="index.html" id="nav-home">Inicio</a>
+    <a href="about.html" id="nav-about">Sobre mí</a>
+    <a href="cursos.html" id="nav-courses">Cursos</a>
+    <a href="contacto.html" id="nav-contact">Contacto</a>
   </nav>
 
-  <!-- Selector de idioma integrado -->
   <div class="language-selector">
     <button class="lang-btn">🌐 Idioma</button>
     <div class="lang-menu">
@@ -31,46 +30,37 @@
 </header>
 
 <section class="hero">
-  <h1>Bienvenido a MiWeb</h1>
-  <p>Descubre cómo la inteligencia artificial puede ayudarte a emprender y aprender de forma creativa.</p>
-  <a href="cursos.html" class="btn">Ver Cursos</a>
+  <h1 id="hero-title">Bienvenido a MiWeb</h1>
+  <p id="hero-subtitle">Descubre cómo la inteligencia artificial puede ayudarte a emprender y aprender de forma creativa.</p>
+  <a href="cursos.html" class="btn" id="hero-button">Ver Cursos</a>
 </section>
 
 <section class="testimonios">
-  <h2>Historias de éxito</h2>
+  <h2 id="testimonios-title">Historias de éxito</h2>
+
   <div class="bloques">
     <div class="curso-card">
-      <p>"Los cursos de Marcos me ayudaron a lanzar mi proyecto con IA."</p>
-      <p><strong>- Ana López</strong></p>
+      <p id="test-1">"Los cursos de Marcos me ayudaron a lanzar mi proyecto con IA."</p>
+      <p><strong id="test-1-name">- Ana López</strong></p>
     </div>
+
     <div class="curso-card">
-      <p>"Explicaciones claras y prácticas, muy recomendados."</p>
-      <p><strong>- Juan Pérez</strong></p>
+      <p id="test-2">"Explicaciones claras y prácticas, muy recomendados."</p>
+      <p><strong id="test-2-name">- Juan Pérez</strong></p>
     </div>
+
     <div class="curso-card">
-      <p>"Gracias a este programa aprendí a aplicar IA en mi negocio."</p>
-      <p><strong>- Laura García</strong></p>
+      <p id="test-3">"Gracias a este programa aprendí a aplicar IA en mi negocio."</p>
+      <p><strong id="test-3-name">- Laura García</strong></p>
     </div>
   </div>
 </section>
 
 <footer>
-  <p>© 2025 MiWeb - Todos los derechos reservados</p>
-  <div class="social">
-    <a href="#">🌐</a>
-    <a href="#">📧</a>
-    <a href="#">📱</a>
-  </div>
+  <p id="footer-text">© 2025 MiWeb - Todos los derechos reservados</p>
 </footer>
 
-<script>
-document.querySelectorAll(".lang-option").forEach(option => {
-  option.addEventListener("click", () => {
-    const lang = option.getAttribute("data-lang");
-    alert("Idioma cambiado a: " + option.textContent);
-  });
-});
-</script>
+<script src="js/traducciones.js"></script>
 
 </body>
 </html>
