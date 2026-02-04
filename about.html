@@ -6,32 +6,58 @@
   <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-  <header>
-    <a href="index.html" class="logo">MiWeb</a>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="about.html">Sobre mí</a>
-      <a href="cursos.html">Cursos</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
-  </header>
 
-  <section class="about">
-    <h2>Quién soy</h2>
-    <div class="perfil">
-      <div class="avatar-placeholder">
-        <span>👤</span>
-      </div>
-      <div class="info">
-        <h3>Marcos Martínez</h3>
-        <p>Soy estudiante apasionado por la tecnología, los idiomas y la creatividad digital. 
-           Me gusta construir proyectos web y aprender nuevas herramientas.</p>
-        <ul class="skills">
-          <li>🌐 Desarrollo web (HTML, CSS, JavaScript)</li>
-          <li>🧠 Inteligencia Artificial aplicada</li>
-          <li>📚 Idiomas: Español, Inglés, Francés, Valenciano</li>
-          <li>🎨 Creatividad digital y diseño</li>
-        </ul>
-      </div>
+<header>
+  <a href="index.html" class="logo">MiWeb</a>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="about.html">Sobre mí</a>
+    <a href="cursos.html">Cursos</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <div class="language-selector">
+    <button class="lang-btn">🌐 Idioma</button>
+    <div class="lang-menu">
+      <div class="lang-option" data-lang="es">🇪🇸 Español</div>
+      <div class="lang-option" data-lang="en">🇬🇧 English</div>
+      <div class="lang-option" data-lang="fr">🇫🇷 Français</div>
+      <div class="lang-option" data-lang="de">🇩🇪 Deutsch</div>
+      <div class="lang-option" data-lang="zh">🇨🇳 中文</div>
     </div>
-  </section>
+  </div>
+</header>
+
+<section class="about">
+  <h2>Quién soy</h2>
+
+  <div class="perfil">
+    <div class="avatar-placeholder">
+      <span>👤</span>
+    </div>
+
+    <div class="info">
+      <h3>Marcos Martínez</h3>
+      <p>Soy estudiante apasionado por la tecnología, los idiomas y la creatividad digital. Me gusta construir proyectos web y aprender nuevas herramientas.</p>
+
+      <ul class="skills">
+        <li>🌐 Desarrollo web (HTML, CSS, JavaScript)</li>
+        <li>🧠 Inteligencia Artificial aplicada</li>
+        <li>📚 Idiomas: Español, Inglés, Francés, Valenciano</li>
+        <li>🎨 Creatividad digital y diseño</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<script>
+document.querySelectorAll(".lang-option").forEach(option => {
+  option.addEventListener("click", () => {
+    alert("Idioma cambiado a: " + option.textContent);
+  });
+});
+</script>
+
+</body>
+</html>
