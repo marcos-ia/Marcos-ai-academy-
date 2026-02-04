@@ -6,17 +6,14 @@
   <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-
 <header>
   <a href="index.html" class="logo">MiWeb</a>
-
   <nav>
     <a href="index.html">Inicio</a>
     <a href="about.html">Sobre mí</a>
     <a href="cursos.html">Cursos</a>
     <a href="contacto.html">Contacto</a>
   </nav>
-
   <div class="language-selector">
     <button class="lang-btn">🌐 Idioma</button>
     <div class="lang-menu">
@@ -28,11 +25,10 @@
     </div>
   </div>
 </header>
-
 <section class="contacto">
   <h2>Contacto</h2>
-  <p>Si quieres más información o colaborar conmigo, rellena el formulario y te responderé lo antes posible.</p>
-
+  <p>Si quieres más información o colaborar conmigo, rellena el formulario y te responderé lo antes posible.
+  </p>
   <div class="contact-info">
     <div class="card">
       <h3>📍 Dirección</h3>
@@ -47,21 +43,16 @@
       <p>+34 600 000 000</p>
     </div>
   </div>
-
   <form action="https://formspree.io/f/xdkqvgvl" method="POST" class="formulario">
     <label for="nombre">Nombre</label>
     <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
-
     <label for="email">Correo electrónico</label>
     <input type="email" id="email" name="email" placeholder="Tu correo" required>
-
     <label for="mensaje">Mensaje</label>
     <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
-
     <button type="submit">Enviar</button>
   </form>
 </section>
-
 <script>
 document.querySelectorAll(".lang-option").forEach(option => {
   option.addEventListener("click", () => {
@@ -69,6 +60,5 @@ document.querySelectorAll(".lang-option").forEach(option => {
   });
 });
 </script>
-
 </body>
 </html>
