@@ -2,138 +2,127 @@ index.html
 #Marcos-ai-academy-
 Academia de inteligencia artificial 
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>Marcos AI Academy - Cursos de Inteligencia Artificial</title>
-  <meta name="description" content="Academia moderna con cursos de IA para principiantes, creativos, gamers y avanzados.">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Georgia', serif;
-      background-color: #f4f1ea;
-      color: #4a3b2c;
-    }
-
-    header {
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 20px;
-      color: #6b5b4a;
-    }
-
-    .courses {
-      max-width: 900px;
-      margin: 40px auto;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 30px;
-      padding: 0 20px;
-    }
-
-    .course {
-      background-color: #fffdf8;
-      border: 1px solid #e0d6c3;
-      border-radius: 12px;
-      padding: 30px;
-      transition: transform 0.3s;
-    }
-
-    .course:hover {
-      transform: translateY(-4px);
-    }
-
-    .course h2 {
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
-
-    .course p {
-      font-size: 16px;
-      color: #5e4c3b;
-      margin-bottom: 15px;
-    }
-
-    .price {
-      font-size: 18px;
-      font-weight: bold;
-      color: #7a5d3b;
-      display: none;
-      margin-top: 10px;
-    }
-
-    .show-button {
-      background-color: #e0d6c3;
-      color: #4a3b2c;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-
-    .show-button:hover {
-      background-color: #d4c4ae;
-    }
-
-    @media (max-width: 700px) {
-      .courses {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+  <meta charset="UTF-8">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-
   <header>
-    <h1>Marcos AI Academy</h1>
-    <p>Explora nuestros cursos exclusivos sobre Inteligencia Artificial</p>
+    <a href="index.html" class="logo">MiWeb</a>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="about.html">Sobre mí</a>
+      <a href="cursos.html">Cursos</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
   </header>
 
-  <div class="courses">
-    <div class="course">
-      <h2>IA para Principiantes</h2>
-      <p>Descubre qué es la inteligencia artificial, cómo funciona y cómo se aplica en tu día a día.</p>
-      <button class="show-button" onclick="togglePrice(this)">Ver precio</button>
-      <div class="price">19€</div>
+  <section class="hero">
+    <h1>Bienvenido a MiWeb</h1>
+    <p>Descubre cómo la inteligencia artificial puede ayudarte a emprender y aprender de forma creativa.</p>
+    <a href="cursos.html" class="btn">Ver Cursos</a>
+  </section>
+
+  <!-- Historias de éxito -->
+  <section class="testimonios">
+    <h2>Historias de éxito</h2>
+    <div class="bloques">
+      <div class="curso-card">
+        <p>"Los cursos de Marcos me ayudaron a lanzar mi proyecto con IA."</p>
+        <p><strong>- Ana López</strong></p>
+      </div>
+      <div class="curso-card">
+        <p>"Explicaciones claras y prácticas, muy recomendados."</p>
+        <p><strong>- Juan Pérez</strong></p>
+      </div>
+      <div class="curso-card">
+        <p>"Gracias a este programa aprendí a aplicar IA en mi negocio."</p>
+        <p><strong>- Laura García</strong></p>
+      </div>
     </div>
+  </section>
 
-    <div class="course">
-      <h2>IA Creativa</h2>
-      <p>Aprende a generar arte, música y textos con herramientas de inteligencia artificial.</p>
-      <button class="show-button" onclick="togglePrice(this)">Ver precio</button>
-      <div class="price">29€</div>
+  <footer>
+    <p>© 2025 MiWeb - Todos los derechos reservados</p>
+    <div class="social">
+      <a href="#">🌐</a>
+      <a href="#">📧</a>
+      <a href="#">📱</a>
     </div>
-
-    <div class="course">
-      <h2>IA en Videojuegos</h2>
-      <p>Explora cómo se usa la IA para crear enemigos, niveles y comportamientos inteligentes.</p>
-      <button class="show-button" onclick="togglePrice(this)">Ver precio</button>
-      <div class="price">24€</div>
-    </div>
-
-    <div class="course">
-      <h2>IA Avanzada</h2>
-      <p>Adéntrate en redes neuronales, aprendizaje profundo y modelos generativos.</p>
-      <button class="show-button" onclick="togglePrice(this)">Ver precio</button>
-      <div class="price">39€</div>
-    </div>
-  </div>
-
-  <script>
-    function togglePrice(button) {
-      const price = button.nextElementSibling;
-      price.style.display = price.style.display === "block" ? "none" : "block";
-    }
-  </script>
-
+  </footer>
 </body>
 </html>
+<!-- SELECTOR DE IDIOMA COMPLETO -->
+<div class="language-selector">
+  <button class="lang-btn">🌐 Idioma</button>
+
+  <div class="lang-menu">
+    <div class="lang-option" data-lang="es">🇪🇸 Español</div>
+    <div class="lang-option" data-lang="en">🇬🇧 English</div>
+    <div class="lang-option" data-lang="fr">🇫🇷 Français</div>
+    <div class="lang-option" data-lang="de">🇩🇪 Deutsch</div>
+    <div class="lang-option" data-lang="zh">🇨🇳 中文</div>
+  </div>
+</div>
+
+<style>
+.language-selector {
+  position: relative;
+  display: inline-block;
+  font-family: Poppins, sans-serif;
+}
+
+.lang-btn {
+  background: #ffffff;
+  border: 1px solid #ccc;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+.lang-btn:hover {
+  background: #f5f5f5;
+}
+
+.lang-menu {
+  display: none;
+  position: absolute;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-top: 6px;
+  width: 170px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  z-index: 100;
+}
+
+.language-selector:hover .lang-menu {
+  display: block;
+}
+
+.lang-option {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.lang-option:hover {
+  background: #f0f0f0;
+}
+</style>
+
+<script>
+// CAMBIO DE IDIOMA (EJEMPLO BÁSICO)
+document.querySelectorAll(".lang-option").forEach(option => {
+  option.addEventListener("click", () => {
+    const lang = option.getAttribute("data-lang");
+    alert("Idioma cambiado a: " + option.textContent);
+    // Aquí pondrías tu sistema real de traducción
+  });
+});
+</script>
