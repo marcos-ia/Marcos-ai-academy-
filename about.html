@@ -2,23 +2,23 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Sobre mí</title>
+  <title id="title-about">Sobre mí</title>
   <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
 
 <header>
-  <a href="index.html" class="logo">MiWeb</a>
+  <a href="index.html" class="logo" id="nav-logo">MiWeb</a>
 
   <nav>
-    <a href="index.html">Inicio</a>
-    <a href="about.html">Sobre mí</a>
-    <a href="cursos.html">Cursos</a>
-    <a href="contacto.html">Contacto</a>
+    <a href="index.html" id="nav-home">Inicio</a>
+    <a href="about.html" id="nav-about">Sobre mí</a>
+    <a href="cursos.html" id="nav-courses">Cursos</a>
+    <a href="contacto.html" id="nav-contact">Contacto</a>
   </nav>
 
   <div class="language-selector">
-    <button class="lang-btn">🌐 Idioma</button>
+    <button class="lang-btn" id="lang-btn">🌐 Idioma</button>
     <div class="lang-menu">
       <div class="lang-option" data-lang="es">🇪🇸 Español</div>
       <div class="lang-option" data-lang="en">🇬🇧 English</div>
@@ -30,7 +30,7 @@
 </header>
 
 <section class="about">
-  <h2>Quién soy</h2>
+  <h2 id="about-title">Quién soy</h2>
 
   <div class="perfil">
     <div class="avatar-placeholder">
@@ -38,26 +38,20 @@
     </div>
 
     <div class="info">
-      <h3>Marcos Martínez</h3>
-      <p>Soy estudiante apasionado por la tecnología, los idiomas y la creatividad digital. Me gusta construir proyectos web y aprender nuevas herramientas.</p>
+      <h3 id="about-name">Marcos Martínez</h3>
+      <p id="about-desc">Soy estudiante apasionado por la tecnología, los idiomas y la creatividad digital. Me gusta construir proyectos web y aprender nuevas herramientas.</p>
 
       <ul class="skills">
-        <li>🌐 Desarrollo web (HTML, CSS, JavaScript)</li>
-        <li>🧠 Inteligencia Artificial aplicada</li>
-        <li>📚 Idiomas: Español, Inglés, Francés, Valenciano</li>
-        <li>🎨 Creatividad digital y diseño</li>
+        <li id="skill-1">🌐 Desarrollo web (HTML, CSS, JavaScript)</li>
+        <li id="skill-2">🧠 Inteligencia Artificial aplicada</li>
+        <li id="skill-3">📚 Idiomas: Español, Inglés, Francés, Valenciano</li>
+        <li id="skill-4">🎨 Creatividad digital y diseño</li>
       </ul>
     </div>
   </div>
 </section>
 
-<script>
-document.querySelectorAll(".lang-option").forEach(option => {
-  option.addEventListener("click", () => {
-    alert("Idioma cambiado a: " + option.textContent);
-  });
-});
-</script>
+<script src="js/traducciones.js"></script>
 
 </body>
 </html>
