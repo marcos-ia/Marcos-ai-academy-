@@ -2,20 +2,23 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Contacto</title>
+  <title id="title-contact">Contacto</title>
   <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
+
 <header>
-  <a href="index.html" class="logo">MiWeb</a>
+  <a href="index.html" class="logo" id="nav-logo">MiWeb</a>
+
   <nav>
-    <a href="index.html">Inicio</a>
-    <a href="about.html">Sobre mí</a>
-    <a href="cursos.html">Cursos</a>
-    <a href="contacto.html">Contacto</a>
+    <a href="index.html" id="nav-home">Inicio</a>
+    <a href="about.html" id="nav-about">Sobre mí</a>
+    <a href="cursos.html" id="nav-courses">Cursos</a>
+    <a href="contacto.html" id="nav-contact">Contacto</a>
   </nav>
+
   <div class="language-selector">
-    <button class="lang-btn">🌐 Idioma</button>
+    <button class="lang-btn" id="lang-btn">🌐 Idioma</button>
     <div class="lang-menu">
       <div class="lang-option" data-lang="es">🇪🇸 Español</div>
       <div class="lang-option" data-lang="en">🇬🇧 English</div>
@@ -25,39 +28,43 @@
     </div>
   </div>
 </header>
+
 <section class="contacto">
-  <h2>Contacto</h2>
-  <p>Si quieres más información o colaborar conmigo, rellena el formulario y te responderé lo antes posible.</p>
+  <h2 id="contact-title">Contacto</h2>
+  <p id="contact-desc">Si quieres más información o colaborar conmigo, rellena el formulario y te responderé lo antes posible.</p>
+
   <div class="contact-info">
     <div class="card">
-      <h3>📍 Dirección</h3>
-      <p>Elche, España</p>
+      <h3 id="contact-address-title">📍 Dirección</h3>
+      <p id="contact-address">Elche, España</p>
     </div>
+
     <div class="card">
-      <h3>📧 Correo</h3>
-      <p>marcos@example.com</p>
+      <h3 id="contact-email-title">📧 Correo</h3>
+      <p id="contact-email">marcos@example.com</p>
     </div>
+
     <div class="card">
-      <h3>📱 Teléfono</h3>
-      <p>+34 600 000 000</p>
+      <h3 id="contact-phone-title">📱 Teléfono</h3>
+      <p id="contact-phone">+34 600 000 000</p>
     </div>
   </div>
+
   <form action="https://formspree.io/f/xdkqvgvl" method="POST" class="formulario">
-    <label for="nombre">Nombre</label>
+    <label id="form-name-label" for="nombre">Nombre</label>
     <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
-    <label for="email">Correo electrónico</label>
+
+    <label id="form-email-label" for="email">Correo electrónico</label>
     <input type="email" id="email" name="email" placeholder="Tu correo" required>
-    <label for="mensaje">Mensaje</label>
+
+    <label id="form-msg-label" for="mensaje">Mensaje</label>
     <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
-    <button type="submit">Enviar</button>
+
+    <button type="submit" id="form-submit">Enviar</button>
   </form>
 </section>
-<script>
-document.querySelectorAll(".lang-option").forEach(option => {
-  option.addEventListener("click", () => {
-    alert("Idioma cambiado a: " + option.textContent);
-  });
-});
-</script>
+
+<script src="js/traducciones.js"></script>
+
 </body>
 </html>
