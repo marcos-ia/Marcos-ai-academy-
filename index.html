@@ -6,120 +6,71 @@
   <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-  <header>
-    <a href="index.html" class="logo">MiWeb</a>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="about.html">Sobre mí</a>
-      <a href="cursos.html">Cursos</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
-  </header>
 
-  <section class="hero">
-    <h1>Bienvenido a MiWeb</h1>
-    <p>Descubre cómo la inteligencia artificial puede ayudarte a emprender y aprender de forma creativa.</p>
-    <a href="cursos.html" class="btn">Ver Cursos</a>
-  </section>
+<header>
+  <a href="index.html" class="logo">MiWeb</a>
 
-  <!-- Historias de éxito -->
-  <section class="testimonios">
-    <h2>Historias de éxito</h2>
-    <div class="bloques">
-      <div class="curso-card">
-        <p>"Los cursos de Marcos me ayudaron a lanzar mi proyecto con IA."</p>
-        <p><strong>- Ana López</strong></p>
-      </div>
-      <div class="curso-card">
-        <p>"Explicaciones claras y prácticas, muy recomendados."</p>
-        <p><strong>- Juan Pérez</strong></p>
-      </div>
-      <div class="curso-card">
-        <p>"Gracias a este programa aprendí a aplicar IA en mi negocio."</p>
-        <p><strong>- Laura García</strong></p>
-      </div>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="about.html">Sobre mí</a>
+    <a href="cursos.html">Cursos</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <!-- Selector de idioma integrado -->
+  <div class="language-selector">
+    <button class="lang-btn">🌐 Idioma</button>
+    <div class="lang-menu">
+      <div class="lang-option" data-lang="es">🇪🇸 Español</div>
+      <div class="lang-option" data-lang="en">🇬🇧 English</div>
+      <div class="lang-option" data-lang="fr">🇫🇷 Français</div>
+      <div class="lang-option" data-lang="de">🇩🇪 Deutsch</div>
+      <div class="lang-option" data-lang="zh">🇨🇳 中文</div>
     </div>
-  </section>
-
-  <footer>
-    <p>© 2025 MiWeb - Todos los derechos reservados</p>
-    <div class="social">
-      <a href="#">🌐</a>
-      <a href="#">📧</a>
-      <a href="#">📱</a>
-    </div>
-  </footer>
-</body>
-</html>
-<!-- SELECTOR DE IDIOMA COMPLETO -->
-<div class="language-selector">
-  <button class="lang-btn">🌐 Idioma</button>
-
-  <div class="lang-menu">
-    <div class="lang-option" data-lang="es">🇪🇸 Español</div>
-    <div class="lang-option" data-lang="en">🇬🇧 English</div>
-    <div class="lang-option" data-lang="fr">🇫🇷 Français</div>
-    <div class="lang-option" data-lang="de">🇩🇪 Deutsch</div>
-    <div class="lang-option" data-lang="zh">🇨🇳 中文</div>
   </div>
-</div>
+</header>
 
-<style>
-.language-selector {
-  position: relative;
-  display: inline-block;
-  font-family: Poppins, sans-serif;
-}
+<section class="hero">
+  <h1>Bienvenido a MiWeb</h1>
+  <p>Descubre cómo la inteligencia artificial puede ayudarte a emprender y aprender de forma creativa.</p>
+  <a href="cursos.html" class="btn">Ver Cursos</a>
+</section>
 
-.lang-btn {
-  background: #ffffff;
-  border: 1px solid #ccc;
-  padding: 8px 14px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 15px;
-  transition: 0.2s;
-}
+<section class="testimonios">
+  <h2>Historias de éxito</h2>
+  <div class="bloques">
+    <div class="curso-card">
+      <p>"Los cursos de Marcos me ayudaron a lanzar mi proyecto con IA."</p>
+      <p><strong>- Ana López</strong></p>
+    </div>
+    <div class="curso-card">
+      <p>"Explicaciones claras y prácticas, muy recomendados."</p>
+      <p><strong>- Juan Pérez</strong></p>
+    </div>
+    <div class="curso-card">
+      <p>"Gracias a este programa aprendí a aplicar IA en mi negocio."</p>
+      <p><strong>- Laura García</strong></p>
+    </div>
+  </div>
+</section>
 
-.lang-btn:hover {
-  background: #f5f5f5;
-}
-
-.lang-menu {
-  display: none;
-  position: absolute;
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  margin-top: 6px;
-  width: 170px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  z-index: 100;
-}
-
-.language-selector:hover .lang-menu {
-  display: block;
-}
-
-.lang-option {
-  padding: 10px;
-  cursor: pointer;
-  font-size: 14px;
-  transition: 0.2s;
-}
-
-.lang-option:hover {
-  background: #f0f0f0;
-}
-</style>
+<footer>
+  <p>© 2025 MiWeb - Todos los derechos reservados</p>
+  <div class="social">
+    <a href="#">🌐</a>
+    <a href="#">📧</a>
+    <a href="#">📱</a>
+  </div>
+</footer>
 
 <script>
-// CAMBIO DE IDIOMA (EJEMPLO BÁSICO)
 document.querySelectorAll(".lang-option").forEach(option => {
   option.addEventListener("click", () => {
     const lang = option.getAttribute("data-lang");
     alert("Idioma cambiado a: " + option.textContent);
-    // Aquí pondrías tu sistema real de traducción
   });
 });
 </script>
+
+</body>
+</html>
