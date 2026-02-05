@@ -335,3 +335,18 @@ const translations = {
     "about-title": "我是谁",
     "about-name": "Marcos Martinez",
     "about-desc": "我是一名热爱科技、语言和数字创意的
+      // Cambiar idioma al hacer clic
+document.querySelectorAll(".lang-option").forEach(option => {
+  option.addEventListener("click", () => {
+    const lang = option.getAttribute("data-lang");
+
+    // Recorre todos los IDs del idioma elegido
+    for (const id in translations[lang]) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.textContent = translations[lang][id];
+      }
+    }
+  });
+});
+
