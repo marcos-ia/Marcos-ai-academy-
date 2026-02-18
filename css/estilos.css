@@ -37,3 +37,41 @@ p {
     font-size: 20px;
     line-height: 1.5;
 }
+/* ======== TARJETAS DE CURSOS ======== */
+.curso-card {
+    background: white;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.curso-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.curso-card h2 {
+    margin-top: 0;
+    color: #1a73e8;
+}
+
+.curso-card p {
+    margin-bottom: 10px;
+}
+
+.btn-info {
+    display: inline-block;
+    padding: 10px 16px;
+    background: #1a73e8;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.2s ease;
+}
+
+.btn-info:hover {
+    background: #155bb5;
+}
