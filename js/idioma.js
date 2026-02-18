@@ -1,19 +1,23 @@
-// Cargar archivo JSON
-async function cargarJSON(ruta) {
-    const respuesta = await fetch(ruta);
-    return await respuesta.json();
-}
+// Textos directamente en el JS (sin JSON)
+const textos = {
+    es: {
+        title: "Bienvenido a Marcos AI Academy",
+        subtitle: "Aprende Inteligencia Artificial de forma práctica"
+    },
+    en: {
+        title: "Welcome to Marcos AI Academy",
+        subtitle: "Learn Artificial Intelligence in a practical way"
+    }
+};
 
-async function cambiarIdioma(lang) {
+function cambiarIdioma(lang) {
     localStorage.setItem("idioma", lang);
 
-    const textos = await cargarJSON(`../lang/${lang}.json`);
-
-    document.getElementById("title").innerText = textos.title;
-    document.getElementById("subtitle").innerText = textos.subtitle;
+    document.getElementById("title").innerText = textos[lang].title;
+    document.getElementById("subtitle").innerText = textos[lang].subtitle;
 }
 
-// Detectar idioma guardado
+// Cargar idioma guardado
 const idiomaGuardado = localStorage.getItem("idioma") || "es";
 document.getElementById("lang").value = idiomaGuardado;
 cambiarIdioma(idiomaGuardado);
