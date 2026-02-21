@@ -1,8 +1,70 @@
-<div class="container">
-    <h1 data-i18n="contact_title"></h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title id="title-contact">Contacto</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
 
-    <div class="curso-card">
-        <p data-i18n="contact_text"></p>
-        <p><strong>Email:</strong> contacto@marcosaiacademy.com</p>
+<header>
+  <a href="index.html" class="logo" id="nav-logo">MiWeb</a>
+
+  <nav>
+    <a href="index.html" id="nav-home">Inicio</a>
+    <a href="about.html" id="nav-about">Sobre mí</a>
+    <a href="cursos.html" id="nav-courses">Cursos</a>
+    <a href="contacto.html" id="nav-contact">Contacto</a>
+  </nav>
+
+  <div class="language-selector">
+    <button class="lang-btn" id="lang-btn">🌐 Idioma</button>
+    <div class="lang-menu">
+      <div class="lang-option" data-lang="es">🇪🇸 Español</div>
+      <div class="lang-option" data-lang="en">🇬🇧 English</div>
+      <div class="lang-option" data-lang="fr">🇫🇷 Français</div>
+      <div class="lang-option" data-lang="de">🇩🇪 Deutsch</div>
+      <div class="lang-option" data-lang="zh">🇨🇳 中文</div>
     </div>
-</div>
+  </div>
+</header>
+
+<section class="contacto">
+  <h2 id="contact-title">Contacto</h2>
+  <p id="contact-desc">Si quieres más información o colaborar conmigo, rellena el formulario y te responderé lo antes posible.</p>
+
+  <div class="contact-info">
+    <div class="card">
+      <h3 id="contact-address-title">📍 Dirección</h3>
+      <p id="contact-address">Elche, España</p>
+    </div>
+
+    <div class="card">
+      <h3 id="contact-email-title">📧 Correo</h3>
+      <p id="contact-email">marcos@example.com</p>
+    </div>
+
+    <div class="card">
+      <h3 id="contact-phone-title">📱 Teléfono</h3>
+      <p id="contact-phone">+34 600 000 000</p>
+    </div>
+  </div>
+
+  <form action="https://formspree.io/f/xdkqvgvl" method="POST" class="formulario">
+    <label id="form-name-label" for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+    <label id="form-email-label" for="email">Correo electrónico</label>
+    <input type="email" id="email" name="email" placeholder="Tu correo" required>
+
+    <label id="form-msg-label" for="mensaje">Mensaje</label>
+    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+    <button type="submit" id="form-submit">Enviar</button>
+  </form>
+</section>
+
+<script src="js/traducciones.js"></script>
+
+</body>
+</html>
